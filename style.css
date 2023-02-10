@@ -13,6 +13,7 @@ body {
 }
 .plot {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
@@ -35,12 +36,24 @@ body {
   background-color: rgb(55, 55, 55);
   border-radius: 24px;
   color: aliceblue;
-  transition: .5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 .playing {
-    border: 1px dashed Red !important; 
-    background-color: aliceblue !important;
-    color: rgb(55, 55, 55) !important;
-    transform: scale(1.2);
-  }
-
+  border: 1px dashed Red !important;
+  background-color: aliceblue !important;
+  color: rgb(55, 55, 55) !important;
+  transform: scale(1.2);
+}
+.row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+.row h1{
+    padding: 50px 20px;
+    font-family: Poppins;
+    font-size: 4rem;
+    color: white;
+}
